@@ -1,29 +1,38 @@
 package com.yujunquan.studylife.entity;
 
 public class User {
-    private String id;
-    private String name;
+    private Integer userID;
+    private String userPwd;
+    private String userName;
     private  UserInfo userInfo;
 
-    public String getId() {
-        return id;
+    public Integer getUserID() {
+        return userID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setUserID(Integer userID) {
+        this.userID = userID;
     }
 
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public UserInfo getUserInfo() {
 
         return userInfo;
+    }
+
+    public String getUserPwd() {
+        return userPwd;
+    }
+
+    public void setUserPwd(String userPwd) {
+        this.userPwd = userPwd;
     }
 
     public void setUserInfo(UserInfo userInfo) {
