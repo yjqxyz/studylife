@@ -16,5 +16,6 @@ public class DateTest {
             System.out.println("相等");
 
         }
+        System.out.println("test");
     }
 }
