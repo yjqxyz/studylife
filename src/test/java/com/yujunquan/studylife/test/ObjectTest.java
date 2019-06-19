@@ -9,6 +9,10 @@ public class ObjectTest {
         if(null == user.getUserInfo()){
             System.out.println("test");
         }
+
+
+
+
     }
 
 }
