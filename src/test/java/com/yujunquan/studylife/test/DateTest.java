@@ -11,18 +11,34 @@ import java.util.Date;
 
 public class DateTest {
 
+  public static void main(String[] args) {
+    System.out.println(new Date().getTime());
+    System.out.println(new Date(1562567906855L));
+  }
 
     public void test1(){
 
+        new Boolean("");
         System.out.println("JUnit test");
     }
 
-    public static void mai4n(String[] args) {
+    public static void main7(String[] args) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        try {
+            Date parse = sdf.parse("2019-11-11 24:9:55");//解析异常
+            System.out.println(parse);
+            System.out.println(sdf.format(parse));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main6(String[] args) {
         Date date = new Date(null);// 解析异常
         System.out.println(date);
     }
 
-    public static void main(String[] args) {
+    public static void main5(String[] args) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String strDate = "2019-01-01 0:11:00";
         try {
