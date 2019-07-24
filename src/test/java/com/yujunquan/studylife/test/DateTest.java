@@ -13,6 +13,7 @@ public class DateTest {
 
   public static void main(String[] args) {
     System.out.println(new Date().getTime());
+    System.out.println(System.currentTimeMillis());
     System.out.println(new Date(1562567906855L));
   }
 
