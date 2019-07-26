@@ -1,17 +1,19 @@
 package com.yujunquan.studylife.test;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.junit4.SpringRunner;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
 public class DateTest {
+    public static void main(String[] args) {
+        SimpleDateFormat sdfTmp = new SimpleDateFormat("yyyy-MM-dd HH时mm分");
+        String dateStr = sdfTmp.format(new Date());
+        System.out.println(dateStr);
 
-  public static void main(String[] args) {
+    }
+
+    public static void main8(String[] args) {
     System.out.println(new Date().getTime());
     System.out.println(System.currentTimeMillis());
     System.out.println(new Date(1562567906855L));

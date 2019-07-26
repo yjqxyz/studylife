@@ -3,6 +3,12 @@ package com.yujunquan.studylife.test;
 public class StringTest {
 
     public static void main(String[] args) {
+        String str4 = "不详报案  2019-07-25 14时36分 在不详测试因为行人在未特指的非交通事故中";
+        byte[] bytes = str4.getBytes();
+        for (byte aByte : bytes) {
+            System.out.print(aByte + "-");
+        }
+        System.out.println(bytes.length);
         String str1 = "str1";
         String str2 = "str2";
         String str3 = str1;

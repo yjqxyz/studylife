@@ -7,7 +7,7 @@ public class User {
     private  UserInfo userInfo;
 
     public Integer getUserID() {
-        return userID;
+        return this.userID;
     }
 
     public void setUserID(Integer userID) {
@@ -15,7 +15,7 @@ public class User {
     }
 
     public String getUserName() {
-        return userName;
+        return this.userName;
     }
 
     public void setUserName(String userName) {
@@ -24,11 +24,11 @@ public class User {
 
     public UserInfo getUserInfo() {
 
-        return userInfo;
+        return this.userInfo;
     }
 
     public String getUserPwd() {
-        return userPwd;
+        return this.userPwd;
     }
 
     public void setUserPwd(String userPwd) {
@@ -37,5 +37,15 @@ public class User {
 
     public void setUserInfo(UserInfo userInfo) {
         this.userInfo = userInfo;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userID=" + this.userID +
+                ", userPwd='" + this.userPwd + '\'' +
+                ", userName='" + this.userName + '\'' +
+                ", userInfo=" + this.userInfo +
+                '}';
     }
 }
