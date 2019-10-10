@@ -7,6 +7,6 @@ import java.util.List;
 public class ArrayTest {
     public static void main(String[] args) {
         String[] array = {"a", "b", "c"};
-        List<String> resultList = new ArrayList<>(Arrays.asList(array));
+        List<String> resultList = new ArrayList<String>(Arrays.asList(array));
     }
 }

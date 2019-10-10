@@ -36,6 +36,11 @@
         <druid-spring.version>1.1.1</druid-spring.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <!--jar 包管理  声明可能用到的jar包，方便版本统一管理-->
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <!--Spring相关依赖Begin-->
        <dependency>

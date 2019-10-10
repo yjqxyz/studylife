@@ -48,7 +48,7 @@ public class JsonTest {
         jsonArray.add(user3);
         Object[] objects = jsonArray.toArray();
 
-        List<Object> objects1 = new ArrayList<>(objects.length);
+        List<Object> objects1 = new ArrayList<Object>(objects.length);
         boolean b = Collections.addAll(objects1, objects);
         if (b) {
             for (Object o : objects1) {
@@ -56,7 +56,7 @@ public class JsonTest {
                 System.out.println(userTmp);
             }
         }
-        List<Object> objs = new ArrayList<>(Arrays.asList(objects));
+        List<Object> objs = new ArrayList<Object>(Arrays.asList(objects));
         for (Object obj : objs) {
             User userTmp = (User) obj;
             System.out.println(userTmp);

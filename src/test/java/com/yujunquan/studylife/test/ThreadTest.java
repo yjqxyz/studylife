@@ -8,7 +8,7 @@ public class ThreadTest {
         final List<Integer> list = new ArrayList<Integer>();
 
         // 线程A将0-1000添加到list
-        new Thread(() -> {
+/*        new Thread(() -> {
             for (int i = 0; i < 1000 ; i++) {
                 list.add(i);
 
@@ -18,10 +18,11 @@ public class ThreadTest {
                     e.printStackTrace();
                 }
             }
-        }).start();
+        }).start();*/
 
         // 线程B将1000-2000添加到列表
         new Thread(new Runnable() {
+            @Override
             public void run() {
                 for (int i = 1000; i < 2000 ; i++) {
                     list.add(i);
