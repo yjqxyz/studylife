@@ -4,6 +4,18 @@ import com.yujunquan.studylife.test.innerclasstest.InnerClassTest;
 
 public class Test {
     public static void main(String[] args) {
+        double random = Math.random();
+        System.out.println(random);
+        System.out.println((int) (10 + random * 100));
+
+    }
+
+    public static void main3(String[] args) {
+        System.out.println("\\");
+        System.out.println("\'\"");
+    }
+
+    public static void main2(String[] args) {
         System.out.println("就是分辨率有点低了，最少也要买个1080p 的显示器才能完美的展示");
         System.out.println("这样真的可以很大提高效率");
         /**

@@ -1,10 +1,30 @@
 package com.yujunquan.studylife.test;
 
+import com.yujunquan.studylife.entity.User;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class IntergerTest {
     public static void main(String[] args) {
+        int a = 0;
+        for (int i = 0; i < 99; i++) {
+            a = ++a;
+        }
+        System.out.println(a);
+    }
+
+    public static void main4(String[] args) {
+        int i = 1;
+        User user = new User();
+        User user2 = new User();
+        user.setUserID(++i);
+        System.out.println(user.getUserID());
+        user2.setUserID(i++);
+        System.out.println(user2.getUserID());
+    }
+
+    public static void main3(String[] args) {
         int index = 0;
         HashMap<Integer, String> map = new HashMap<>();
         map.put(index, "s1");
