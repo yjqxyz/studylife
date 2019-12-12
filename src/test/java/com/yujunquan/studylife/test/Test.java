@@ -4,6 +4,10 @@ import com.yujunquan.studylife.test.innerclasstest.InnerClassTest;
 
 public class Test {
     public static void main(String[] args) {
+        int v = Integer.parseInt("02");
+        System.out.println(v);
+    }
+    public static void main4(String[] args) {
         double random = Math.random();
         System.out.println(random);
         System.out.println((int) (10 + random * 100));
