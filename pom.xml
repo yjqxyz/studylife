@@ -5,7 +5,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>javasrc</module>
-        <module>javasrc</module>
         <module>toolbox</module>
         <module>testall</module>
         <module>projects</module>
