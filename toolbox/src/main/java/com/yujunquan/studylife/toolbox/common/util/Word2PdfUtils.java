@@ -85,16 +85,13 @@ public class Word2PdfUtils {
         try {
 //            doc2pdf("E:\\test\\src.doc", "E:\\test\\src-18.5.0.pdf");
             // 动态修改达到执行不同逻辑目的
-            int editFlag = 0        ;
-            int version = 185    ;
+            String editFlag = "src"      ;
+//            String editFlag = "src-edit"      ;
+            String version = "19.1.0"    ;
 
-            if(editFlag == 0){// 没有编辑过
-                processByversion("src"+version);
-            }else if(editFlag == 1){
-                processByversion("edit"+version);
-            }else {
-                processByversion("xml2word");
-            }
+            doc2pdfByEditFlagAndVersion(editFlag,version);
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -103,6 +100,9 @@ public class Word2PdfUtils {
         switch (version){
             case "src185":
                 doc2pdfsrc185();
+                break;
+            case "src1910":
+                doc2pdfsrc1910();
                 break;
             case "src195":
                 doc2pdfsrc195();
@@ -126,6 +126,13 @@ public class Word2PdfUtils {
                 break;
         }
     }
+    static void doc2pdfByEditFlagAndVersion(String editFlag,String version){
+        try {
+            doc2pdf("E:\\test\\"+editFlag+".doc", "E:\\test\\"+editFlag+version+".pdf");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     static void xml2doc2pdf(){
         try {
             doc2pdf("E:\\test\\src-edit - 副本xml2word.doc", "E:\\test\\src-edit - 副本xml2word-18.5.0.pdf");
@@ -133,9 +140,16 @@ public class Word2PdfUtils {
             e.printStackTrace();
         }
     }
+    static void doc2pdfsrc1910(){
+        try {
+            doc2pdf("E:\\test\\src.doc", "E:\\test\\src-19.1.0.pdf");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     static void doc2pdfsrc185(){
         try {
-            doc2pdf("E:\\test\\src2.doc", "E:\\test\\src-18.5.0.pdf");
+            doc2pdf("E:\\test\\src.doc", "E:\\test\\src-18.5.0.pdf");
         } catch (Exception e) {
             e.printStackTrace();
         }

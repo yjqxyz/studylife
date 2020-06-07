@@ -12,7 +12,7 @@
     <artifactId>open</artifactId>
 
     <modules>
-        <module>javassist</module>
+
     </modules>
 
 
