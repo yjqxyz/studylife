@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>ddd</module>
-        <module>mvc</module>
+        <module>open</module>
+        <module>me</module>
     </modules>
     <parent>
         <artifactId>studylife</artifactId>
@@ -14,8 +14,15 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-
     <artifactId>projects</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yujunquan</groupId>
+            <artifactId>toolbox</artifactId>
+            <version>${common.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

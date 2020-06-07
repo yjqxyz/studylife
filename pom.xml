@@ -41,8 +41,22 @@
         <orika.version>1.5.4</orika.version>
         <swagger2.version>2.9.2</swagger2.version>
         <druid-spring.version>1.1.1</druid-spring.version>
+        <!--
+                        <aspose-words.version>18.5.0</aspose-words.version>
+-->
+                <!--  <aspose-words.version>19.5</aspose-words.version>
+              -->
+        <!--
+            <aspose-words.version>19.11</aspose-words.version>
+            -->
 
-        <aspose-words.version>18.5.0</aspose-words.version>
+                    <aspose-words.version>20.5</aspose-words.version>
+
+
+
+
+        <common.version>0.0.1-SNAPSHOT</common.version>
+
     </properties>
 
     <dependencyManagement>
