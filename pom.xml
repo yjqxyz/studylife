@@ -43,18 +43,18 @@
         <druid-spring.version>1.1.1</druid-spring.version>
         <!--
                         <aspose-words.version>18.5.0</aspose-words.version>
---><!--
+                    <aspose-words.version>19.1.0</aspose-words.version>
                   <aspose-words.version>19.5</aspose-words.version>
--->
-        <!--
+
                     <aspose-words.version>19.11</aspose-words.version>
-
-
+                    <aspose-words.version>20.5</aspose-words.version>
                                     <aspose-words.version>20.3</aspose-words.version>
-        <aspose-words.version>19.1.0</aspose-words.version>
+                                    -->
 
-                   -->
-        <aspose-words.version>20.5</aspose-words.version>
+        <aspose-words.version>20.5.0</aspose-words.version>
+
+
+
 
 
 

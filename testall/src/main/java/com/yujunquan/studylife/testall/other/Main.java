@@ -3,6 +3,14 @@ package com.yujunquan.studylife.testall.other;
 public class Main {
 
     public static void main(String[] args) {
+        long l = 0L;
+        System.out.println(l%2);
+        System.out.println(l%288);
+        System.out.println(l%100==0);
+        System.out.println(l%288==0);
+    }
+
+    public static void main1(String[] args) {
         int krr[] = {1, 3, 4, 2, 7, 8, 9, 10, 14, 16};
         int arr[] = minK(krr, 4);
         for (int i = 0; i < arr.length; i++)
