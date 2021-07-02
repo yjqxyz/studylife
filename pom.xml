@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>javasrc</module>
+        <module>java</module>
         <module>toolbox</module>
         <module>testall</module>
         <module>projects</module>
@@ -15,7 +15,7 @@
         <version>2.1.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.yujunquan</groupId>
+    <groupId>com.yjq</groupId>
     <artifactId>studylife</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>studylife</name>
@@ -52,13 +52,6 @@
                                     -->
 
         <aspose-words.version>20.5.0</aspose-words.version>
-
-
-
-
-
-
-
         <common.version>0.0.1-SNAPSHOT</common.version>
 
     </properties>

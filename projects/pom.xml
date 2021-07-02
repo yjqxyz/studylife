@@ -10,7 +10,7 @@
     </modules>
     <parent>
         <artifactId>studylife</artifactId>
-        <groupId>com.yujunquan</groupId>
+        <groupId>com.yjq</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
