@@ -1,8 +1,48 @@
 package com.yujunquan.studylife.testall.other;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.Base64;
+
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        String filePath = "E:\\tmp\\test.png";
+        File file = new File(filePath);
+        byte[] bytes = Files.readAllBytes(file.toPath());
+        System.out.println(Arrays.toString(bytes));
+
+
+    }
+
+    public static void main5(String[] args) {
+        String  str = "于峻权";
+        byte[] sb = str.getBytes();
+        System.out.println(Arrays.toString(sb));
+        String  str2 = "于峻权";
+        byte[] decode = Base64.getDecoder().decode(str2);
+        System.out.println(Arrays.toString(decode));
+        byte b = 1;
+        byte b2 = 127;
+        System.out.println(b2);
+    }
+
+    public static void main4(String[] args) throws Exception{
+        Process start = new ProcessBuilder().start();
+    }
+    public static void main3(String[] args) {
+        long t1 = System.nanoTime();
+        while (true){
+            long t2 = System.nanoTime();
+            System.out.println((t2-t1)+"ns");
+            t1 = t2;
+
+        }
+    }
+
+    public static void main2(String[] args) {
         long l = 0L;
         System.out.println(l%2);
         System.out.println(l%288);
